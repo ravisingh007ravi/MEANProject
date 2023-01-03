@@ -1,28 +1,36 @@
 import logo from './logo.svg';
+import './App.css'
 
 
 function App() {
   return (
-   <>
-    <form>
-  <div className="mb-3">
-    <label for="exampleInputEmail1" className="form-label">Email address</label>
-    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
-    <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
-  </div>
-  <div className="mb-3">
-    <label for="exampleInputPassword1" className="form-label">Password</label>
-    <input type="password" className="form-control" id="exampleInputPassword1"/>
-  </div>
-  <div className="mb-3 form-check">
-    <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
-    <label className="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" className="btn btn-primary">Submit</button>
-</form>
-   </>
-    
+    <div>
+      <nav>
+      <a href="https://mail.google.com/mail/u/0/#inbox" className="navtext">Gmail</a>
+      <a href="https://linkedin.com/in/ravi-singh-763378182" className="navtext">Images</a>
+      
+      <img src="https://www.pngarts.com/files/11/Avatar-PNG-Download-Image.png" alt="React Image" className="avatar" />
+    </nav>
+
+    <div className="main">
+        <div className="">
+          <img src="https://p.kindpng.com/picc/s/721-7214985_google-logo-png-free-image-google-png-transparent.png" alt="" className="google"/>
+        </div>
+        <div className="searchb">
+          <span className="material-icons searchicon"></span>
+          <input type="text" value="" placeholder="Search Google or type a URL" required/>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/1200px-Google_mic.svg.png" alt="" className="mic"/>
+        </div>
+        <div className="sbutton">
+          <input type="button" name="https://reactjs.org/" value="Google Search"/>
+          <input type="button" name="https://www.google.com/doodles" value="I'm Feeling Lucky"/>
+        </div>
+    </div>
+    </div>
   );
 }
 
+
+
 export default App;
+
