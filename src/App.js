@@ -14,12 +14,14 @@ class App extends React.Component {
     return (
       <div>
         <textarea
+        className='text'
           value={this.state.input}
           onChange={(e) => this.setState({ input: e.target.value })}
         />
 
         <br />
         <button
+        className='btn'
           onClick={() => {
             this.setState({
               showParagraph: !this.state.showParagraph,

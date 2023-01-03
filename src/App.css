@@ -1,5 +1,9 @@
-.container {
-  margin: auto;
-  border: 10cm solid rgb(99, 104, 108);
-  margin-top: 50px;
+.text {
+  margin-top: 200px;
+  margin-left: 40%
+ 
+}
+.btn{
+  margin-top: 10px;
+  margin-left: 41%
 }
