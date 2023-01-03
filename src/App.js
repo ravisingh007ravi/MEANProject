@@ -1,41 +1,37 @@
 import './App.css'
-import { useState } from "react";
+import React from "react";
 
-function App() {
- 
-  const [text,setText] = useState("");
-  const onChangeHandler = (e) => {
-    setText(e.target.value.toUpperCase());
-  };
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      input: '',
+      showParagraph: false,
+    };
+  }
 
-  const onClickHandler =(e) =>{
-    e.preventDefault();
-    document.getElementsByClassName["input"][0].value = text;
-  };
-console.log( document.getElementsByClassName["input"])
-  return (
-    <div className='container'>
-    <form>
-      <input
-      type="text"
-      className="input"
-      onChange={onChangeHandler}
-      name="name"
-      placeholder="Please Type here"
-      />
+  render() {
+    return (
+      <div>
+        <textarea
+          value={this.state.input}
+          onChange={(e) => this.setState({ input: e.target.value })}
+        />
 
-<input
-      className='btn'
-      type = "submit"
-      onClick={onClickHandler}
-     value = "Submit"
-      />
-
-    </form>
-
-    </div>
-  )
-    
+        <br />
+        <button
+          onClick={() => {
+            this.setState({
+              showParagraph: !this.state.showParagraph,
+            });
+          }}
+        >
+          Display in uppercase
+        </button>
+        {this.state.showParagraph && <p>{this.state.input.toUpperCase()}</p>}
+      </div >
+    );
+  }
 }
 
 
