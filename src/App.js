@@ -1,42 +1,15 @@
-import './App.css'
-import React from "react";
-
-class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      input: '',
-      showParagraph: false,
-    };
-  }
-
-  render() {
-    return (
-      <div>
-        <textarea
-        className='text'
-          value={this.state.input}
-          onChange={(e) => this.setState({ input: e.target.value })}
-        />
-
-        <br />
-        <button
-        className='btn'
-          onClick={() => {
-            this.setState({
-              showParagraph: !this.state.showParagraph,
-            });
-          }}
-        >
-          Display in uppercase
-        </button>
-        {this.state.showParagraph && <p>{this.state.input.toUpperCase()}</p>}
-      </div >
-    );
-  }
+import React from "react"
+import Navbar from './components/NavBar';
+import TextForm from './components/TextForm'
+const App = () => {
+  
+  return (
+    <>
+    <div><Navbar Ravi="Ravi"/></div>
+    <div><TextForm heading="Enter the text to analyze below"/></div>
+    </>
+  )
 }
 
-
-
-export default App;
+export default App
 

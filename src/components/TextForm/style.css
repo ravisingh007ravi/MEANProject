@@ -1,0 +1,62 @@
+.mainArea{
+    margin-top: 8%;
+}
+.char{
+    color: orange;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 24%;
+}
+
+.formControl{
+    margin-top: 3%;
+    margin-left: 22%;
+    border-radius: 10px;
+    background-color: rgb(223, 214, 214);
+    color: rgb(13, 14, 14);
+    border: 2px solid transparent;
+    font-family: "heebo", san-serif;
+    font-weight: 500;
+    font-size: 26px;
+    height: 130px;
+    width: 800px;
+    transition: all 0.2s;
+}
+
+.formControl:hover{ 
+    cursor: pointer;
+    background-color: aqua;
+}
+
+.formControl:focus{
+    cursor: text;
+    color: rgb(81, 13, 13);
+}
+
+.btnControll{
+    margin-left: 44%;
+    margin-top: 2%;
+    border-radius: 10px;
+    border: none;
+    color: rgb(210, 12, 12);
+    background-color: aqua;
+    text-align: center;
+    height: 30px;
+    width: 180px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btnControll:hover,btnControll:active,btnControll:focus{
+    box-shadow: 0 0 20px rgba(207, 40, 40, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.heading{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10%;
+    color: blueviolet;
+}
+
+
